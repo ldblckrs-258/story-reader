@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT #01</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/text-animation.css">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro-v6@44659d9/css/all.min.css" rel="stylesheet" type="text/css" />
+    <!-- Free Font-Awesome Pro : https://fa-v6.hung1001.com/ -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <link rel="stylesheet" href="/src/css/responsive.css">
+</head>
+
+<body>
+    <script>
+    var url = './src/content/chapter1.txt',
+        storyName = "Name Of The Story",
+        chapterName = "Name Of The Chapter 1",
+        chapterNumb = "Chapter 1: ",
+        authorName = "Author",
+        reactS = "258",
+        time = "12:42 - 11/5/2023";
+    </script>
+
+    <nav class="navbar">
+        <a href="#" class="logo">PROJECT #01</a>
+        <div class="nav-links goright">
+            <ul class="nav-list">
+                <li class="nav-item active"> <a href="#">Home</a></li>
+                <li class="nav-item"> <a href="#">Explore</a></li>
+                <li class="nav-item"> <a href="#">Service</a></li>
+                <li class="nav-item"> <a href="#">Account</a></li>
+            </ul>
+        </div>
+        <span class="menu" onclick="MenuBtn()">
+            <i class="fa-solid fa-bars fa-2xl"></i>
+        </span>        
+    </nav>
+
+    <div class="main">
+        <div class="container">
+            <div class="text-ctn">
+                <div class="res-title">
+                    <p id="Chapts"></p> 
+                </div> 
+                <div class="info">
+                    <div class="name">
+                        <i class="fa-light fa-book fa-xs"></i>
+                        <p id="Story"></p>
+                    </div>
+                    <div class="info-s">
+                        <div class="author">
+                            <i class="fa-light fa-pen-to-square fa-xs"></i>
+                            <p id="Author"></p>
+                        </div>
+                        <div class="text-length">
+                            <i class="fa-light fa-text fa-xs"></i>
+                            <p id="Words"></p>
+                        </div>
+                        <div class="reaction">
+                            <i class="fa-light fa-heart fa-xs"></i>
+                            <p id="Reacts"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="time">
+                        <i class="fa-light fa-timer fa-xs"></i>
+                        <p id="Time"></p>
+                    </div>
+                </div>
+                <p class="main-text" id="mainText">                    
+
+                </p>
+            </div>
+            <div class="title">
+                <div class="title-text">
+                    <p id="ChaptN"></p>
+                    &nbsp;
+                    <p id="Chapt"></p>
+                </div>                
+            </div>
+            <div class="page-switch">
+                <div class="pre-page switch">
+                    <i class="fa-solid fa-circle-arrow-left"></i>
+                    <p> Prev</p>
+                </div>
+                <div class="next-page switch">
+                    <p> Next</p>
+                    <i class="fa-solid fa-circle-arrow-right"></i>                    
+                </div>
+            </div>
+            <div class="setting" >
+                
+                <span onclick="openSetting()">
+                    <i class="fa-solid fa-gear fa-xl "></i>
+                </span>
+                <div class="setting-ctn">
+                    <div class="s-item mode">
+                        <p>Light/Dark Mode :</p>
+                        <div>
+                            <input type="checkbox" id="check" class="toggle" onclick="darkMode()">
+                            <label for="check"></label>
+                        </div>
+                    </div>
+                    <div class="s-item size">
+                        <p>Font Size:</p>
+                        <div class="slider">
+                            <input class="size-slider" type="range" min="0.5" max="1.5" value="1" id="Slider" step="0.1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cre">
+            <p>Developed by: @ldblckrs</p>
+        </div>
+    </div>
+    <div class="setting-overlay" onclick="closeSetting()"></div>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/content.js"></script>
+</body>
+
+</html>

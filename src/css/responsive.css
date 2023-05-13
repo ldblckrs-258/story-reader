@@ -1,0 +1,209 @@
+/* ----- MEDIA RESPONSIVE ----- */
+
+@media screen and (max-width: 900px){
+    .navbar {
+        padding: 20px 30px;
+    }
+    .navbar .nav-item a{
+        color: #ffffff ;
+    }
+    
+    .menu {
+        display: flex;
+    }
+    .menu .fa-bars {
+        color: var(--text-color);
+    }
+    .nav-links {       
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(126, 126, 126, 0.5);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        width: 100%;
+        height: 100vh;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transform: translateX(0) ;
+        transition: transform 0.2s ease;
+    }
+
+    .goright {
+        transform: translateX(-900px) ;
+    }
+
+    .nav-list {
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        flex-direction:column;
+    }
+    .nav-item {
+        background-color: #00000000 !important;
+        margin: 25px 0;
+        font-size: 1.2em;
+        letter-spacing: 3px;
+        border: none;
+        box-shadow: none !important;
+    }
+    .nav-item:not(.active):hover {
+        background: #00000000 ;
+        border: none;
+        box-shadow: none ;
+        transform: translateY(0); 
+        transform: scale(1.05);
+        
+    }
+    .nav-item:not(.active):hover a{
+        color: var(--sub-text-color) ;
+    }
+    .container {
+        width: 100%;    
+        height: 80vh;
+        border: 1px solid var(--border-2-color); 
+        border-radius: 10px;
+        margin: 15px 10px 20px;
+    }
+
+    .text-ctn {
+        margin: 10px 0 0;
+        padding: 0 8px 0 15px;
+    }
+    .text-ctn .info > * {
+        padding-bottom: 0;
+    }
+    .title-text {
+        font-size: 16px;
+    }
+    .title-text #Chapt {
+        display: none;
+    }
+    .res-title {
+        display: flex;
+        font-size: 16px;
+    }
+    .text-ctn .info, .name, .time, .info-s {
+        display: block;
+        align-items: center;
+        justify-content: flex-start !important;
+    }
+    .main-text {
+        height: 100%;
+        padding: 15px 0 5px;
+        line-height: 24px;
+        font-size: 14px;
+    }
+    .page-switch {
+        margin: 0 10%;
+        height: 30px;
+        width: 80%;
+    }
+    .cre p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+}
+/*Tablet (480 x 640)*/
+@media screen and (max-width: 480px){
+    .navbar .logo {
+        font-size: 1.5em;
+        letter-spacing: 0.1em;
+    }
+    .main {
+        width: 98%;
+        padding: calc(32.727px + 2*15px) 20px 0 ;
+    }
+    .cre p{
+        font-size: 12px;
+    }
+    .title-text {
+        font-size: 14px;
+    }
+    .res-title {
+        font-size: 14px;
+    }
+    .info-s > *:not(:last-child) {
+        padding-right: 5px;
+    }
+    .info-s > *:not(:first-child) {
+        padding-left: 10px;
+    }
+}
+/*Iphone (480 x 640)*/
+@media screen and (max-width: 320px){
+    .navbar {
+        padding: 20px 25px;
+    }
+    .navbar .logo {
+        font-size: 1.2em;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+        font-size: 1.1em;
+        letter-spacing: 2px;
+    }
+    
+    .text-ctn .info > * {
+        padding: 5px 5px 0;
+    }
+
+    .page-switch {
+        height: auto;
+        margin: 0 20%;
+        width: 60%;
+    }
+    .switch {
+        padding: 0;
+        background-color: #ffffff00;
+    }
+    .switch i {
+        font-size: 28px;
+        margin: 0;
+    }
+    .switch p {
+        display: none;
+    }
+
+    .setting {
+        transform: translate(-50%, 200%);
+        font-size: 14px;
+    }
+    .setting:hover {
+        transform: translate(-50%, calc(200% - 2px));
+    }
+    .setting-ctn {
+        transform: translate(15px,30px);
+        padding: 5px 10px ;
+    }
+    .setting span {
+        height: 17.5px;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+}
+/*Smartphone */
+@media screen and (max-width: 240px){
+    .navbar {
+        padding: 15px 15px;
+    }
+    .navbar .logo {
+        font-size: 1em;
+    }
+}
+
+.showctn {
+    display: block;
+}
+.hidden {
+    display: none;
+}
