@@ -83,6 +83,7 @@
     .res-title {
         display: flex;
         font-size: 16px;
+        color: var(--text-c);
     }
     .text-ctn .info, .name, .time, .info-s {
         display: block;
